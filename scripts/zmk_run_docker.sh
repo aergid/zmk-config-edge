@@ -67,7 +67,7 @@ done
 [[ -z $DOC_TOOLS ]] && DOC_TOOLS="false"
 
 DOCKER_IMG="zmkfirmware/zmk-dev-arm:$ZEPHYR_VERSION"
-DOCKER_CMD="$SUDO docker run --name zmk-$ZEPHYR_VERSION --rm \
+DOCKER_CMD="docker run --name zmk-$ZEPHYR_VERSION --rm \
     --mount type=bind,source=$HOST_ZMK_DIR,target=$DOCKER_ZMK_DIR \
     --mount type=bind,source=$HOST_CONFIG_DIR,target=$DOCKER_CONFIG_DIR \
     --mount type=volume,source=zmk-root-user-$ZEPHYR_VERSION,target=/root \
@@ -78,7 +78,7 @@ DOCKER_CMD="$SUDO docker run --name zmk-$ZEPHYR_VERSION --rm \
 # Reset volumes
 if [[ $CLEAR_CACHE = true ]]
 then
-    $SUDO docker volume rm $(sudo docker volume ls -q | grep "^zmk-.*-$ZEPHYR_VERSION$")
+    docker volume rm $(docker volume ls -q | grep "^zmk-.*-$ZEPHYR_VERSION$")
 fi
 
 # Update west if needed
