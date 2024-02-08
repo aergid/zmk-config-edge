@@ -1,0 +1,13 @@
+/* source keypos definitions */
+#include "../zmk-nodefree-config/keypos_def/keypos_34keys.h"
+
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+/* activate bluetooth */
+#define CONFIG_WIRELESS 1
+
+#define HOST_OS 2  // set to 2 for macOS/Windows-Alt-Codes, default is 0 (Windows)
+
+#include "base.keymap"
+
