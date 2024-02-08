@@ -1,3 +1,5 @@
+[![.github/workflows/build.yml](https://github.com/aergid/zmk-config-edge/actions/workflows/build.yml/badge.svg)](https://github.com/aergid/zmk-config-edge/actions/workflows/build.yml)
+
 # urob's zmk-config
 
 This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration.
