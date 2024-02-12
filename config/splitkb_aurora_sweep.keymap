@@ -7,7 +7,5 @@
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
 
-#define HOST_OS 2  // set to 2 for macOS/Windows-Alt-Codes, default is 0 (Windows)
-
 #include "base.keymap"
 
