@@ -13,7 +13,7 @@
 
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
-#define COMBO_TERM_SLOWW 50
+#define COMBO_TERM_SLOWW 60
 
 // make homerow combos tap-only (so HRMs can be chorded instantaneously)
 #define HRC_TAB    &hml         LA(LGUI) TAB
@@ -24,7 +24,6 @@
 ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM SYM, COMBO_TERM_FAST)
 ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     DEF NAV NUM SYM, COMBO_TERM_FAST)
 
-ZMK_COMBO(fn,    &mo FN,        LB4 LH0,     DEF NAV NUM SYM, COMBO_TERM_SLOWW)
 ZMK_COMBO(sys,   &mo SYS,       RB4 RH0,     DEF NAV NUM SYM, COMBO_TERM_SLOWW)
 
 ZMK_COMBO(tab,   HRC_TAB,       LM3 LM2,     DEF NAV NUM SYM, COMBO_TERM_FAST)

@@ -197,8 +197,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
-#define DSK_PREV    &hmr RSHFT LG(LC(LEFT))  // previous desktop
-#define DSK_NEXT    &hmr LALT LG(LC(RIGHT))  // next     desktop
+#define PLAY_PAUSE  &hmr RSHFT C_PP
+#define MUTE        &hmr LALT C_MUTE
 #define PIN_WIN     &kp LG(LC(LS(Q)))        // pin window across desktops
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
@@ -236,7 +236,7 @@ ZMK_LAYER(fn,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     ___           &kp F7        &kp F8        &kp F9        &kp F10         X_MT     ___           &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    &win_sleep      X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM     &kp LCTRL     &hml LALT F4  &hml LGUI F5  &hml LSHFT F6 &kp F11         X_MM     ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___             X_RM
+    X_LM     &kp LCTRL     &hml LALT F4  &hml LGUI F5  &hml LSHFT F6 &kp F11         X_MM     ___           PLAY_PAUSE    VOL_DOWN      MUTE          ___             X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     ___           &kp F1        &kp F2        &kp F3        &kp F12         X_MB     PIN_APP       PIN_WIN       DSK_MGR       ___           ___             X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
