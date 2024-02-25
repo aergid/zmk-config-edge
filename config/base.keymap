@@ -44,7 +44,7 @@
 
 &lt {  // layer-tap config
     flavor = "balanced";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
@@ -95,12 +95,12 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 #define SMART_NUM &smart_num NUM 0
 ZMK_BEHAVIOR(smart_num, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <QUICK_TAP_MS>;
     bindings = <&mo>, <&num_dance>;
 )
 ZMK_BEHAVIOR(num_dance, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     //bindings = <&num_word>, <&sl NUM>;  // reverse this for sticky-num on single tap
     bindings = <&kp RET>, <&num_word>;  // reverse this for sticky-num on single tap
 )
@@ -164,7 +164,7 @@ SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
 // tap: space | shift + tap: dot -> space -> sticky shift | hold: activate layer
 ZMK_BEHAVIOR(lt_spc, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <QUICK_TAP_MS>;
     bindings = <&mo>, <&spc_morph>;
 )
@@ -184,7 +184,7 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
 
 // tap: copy | double-tap: cut
 ZMK_BEHAVIOR(copy_cut, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     bindings = <&kp LC(INS)>, <&kp LC(X)>;
 )
 
