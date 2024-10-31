@@ -1,5 +1,4 @@
-/* source keypos definitions */
-#include "../zmk-nodefree-config/keypos_def/keypos_34keys.h"
+#include "zmk-helpers/key-labels/34.h"
 
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
